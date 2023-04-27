@@ -16,7 +16,7 @@ public class CorsConfig {
 	   return new WebMvcConfigurer() {
 	      @Override
 	      public void addCorsMappings(CorsRegistry registry) {
-	         registry.addMapping("/siva")
+	         registry.addMapping("/**")
 	         .allowedMethods("*").allowedOrigins("http://localhost:8082");
 	      }    
 	   };
