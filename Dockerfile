@@ -6,3 +6,4 @@ RUN apt-get install maven -y
 RUN git clone https://github.com/NarenPrakash/thymeleafExample.git
 WORKDIR /thymeleafExample
 RUN mvn clean install
+CMD mkdir siva
