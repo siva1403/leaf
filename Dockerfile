@@ -6,4 +6,4 @@ RUN apt-get install maven -y
 RUN git clone https://github.com/siva1403/leaf.git
 WORKDIR /leaf
 RUN mvn clean install
-#CMD mkdir siva
+#CMD mkdir sivaa
