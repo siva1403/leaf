@@ -20,5 +20,5 @@ COPY target/work-0.0.1-SNAPSHOT.jar/ /app/
 
 CMD chmod +r /app/work-0.0.1-SNAPSHOT.jar
 
-#  Define the command to run your application
+# Define the command to run your application
 CMD ["java", "-jar", "work-0.0.1-SNAPSHOT.jar"]
