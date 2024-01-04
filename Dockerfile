@@ -20,7 +20,7 @@ COPY target/work-0.0.1-SNAPSHOT.jar/ /app/
 
 CMD chmod +r /app/work-0.0.1-SNAPSHOT.jar
 
-EXPOSE 8086:8086
+EXPOSE 8086:8086   
 
 # Define the command to run your application
 CMD ["java", "-jar", "work-0.0.1-SNAPSHOT.jar"]
