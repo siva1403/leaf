@@ -26,5 +26,6 @@ phases:
 artifacts:
   files:
     - target/*.jar
+    - abc.txt
   discard-paths: yes
   base-directory: .
