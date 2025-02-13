@@ -27,5 +27,7 @@ artifacts:
   files:
     - target/*.jar
     - abc.txt
+    - appsec.yml
+    - start_application.sh
   discard-paths: yes
   base-directory: .
