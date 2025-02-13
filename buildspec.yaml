@@ -22,7 +22,7 @@ phases:
       - echo "Logging in to Amazon ECR..."
       - ls
       - echo "Building Maven project..."
-      - cd thymeleafExample
+      - cd leaf
       - mvn clean install -DskipTests=true
       - echo "building docker image...."
       - cd ..
