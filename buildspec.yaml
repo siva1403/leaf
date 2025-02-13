@@ -25,7 +25,6 @@ phases:
       - pwd
 artifacts:
   files:
-    - pwd
-    - leaf/target/*.jar
+    - target/*.jar
   discard-paths: yes
-  base-directory: target
+  base-directory: leaf/target
