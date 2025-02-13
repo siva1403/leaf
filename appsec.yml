@@ -4,19 +4,8 @@ files:
   - source: /
     destination: /home/ubuntu/leaf/*.jar
 hooks:
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: scripts/after_install.sh
-      timeout: 300
-      runas: root
   ApplicationStart:
-    - location: scripts/start_application.sh
+    - location: start_application.sh
       timeout: 300
       runas: ubuntu
-  ValidateService:
-    - location: scripts/validate_service.sh
-      timeout: 300
-      runas: ubuntu
+  
