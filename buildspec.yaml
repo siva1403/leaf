@@ -22,8 +22,10 @@ phases:
       - echo "Packaging the application"
       - mvn package # Package your application
       - ls target/
+      - pwd
 artifacts:
   files:
-    - target/*.jar
+    - pwd
+    - leaf/target/*.jar
   discard-paths: yes
   base-directory: target
