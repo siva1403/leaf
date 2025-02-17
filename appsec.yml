@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ubuntu/leaf/*.jar
+    # - source: /home/ubuntu/
+    - destination: /home/ubuntu/leaf/*.jar
 hooks:
   ApplicationStart:
     - location: start_application.sh
