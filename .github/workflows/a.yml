@@ -19,10 +19,6 @@ jobs:
 
       - name: Build project (if needed)
         run: bash deb.sh
-      - name: Copy JAR
-        run: |
-          cp target/*.jar "GitHub Actions/artifacts/app-${{ steps.timestamp.outputs.TIMESTAMP }}.jar"
-
       # ---------------- DOCKER LOGIN ----------------
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
