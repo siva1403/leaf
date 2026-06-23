@@ -18,7 +18,7 @@ jobs:
         run: echo "TIMESTAMP=$(date +%s)" >> $GITHUB_OUTPUT
 
       - name: Build project (if needed)
-        run: bash dep.sh
+        run: bash deb.sh
       - name: Copy JAR
         run: |
           cp target/*.jar "GitHub Actions/artifacts/app-${{ steps.timestamp.outputs.TIMESTAMP }}.jar"
